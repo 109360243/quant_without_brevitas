@@ -6,7 +6,7 @@ float_weight = np.array(array).astype('float32')
 
 def quantiz (q_min,q_max,array):
     S = (max(array)-min(array))/(q_max-q_min)
-    Z = 
+
 quantizer = Int8WeightPerTensorFloat(
         quant_type=int,  # 使用整數量化
         bit_width=8,  # 8 位量化
